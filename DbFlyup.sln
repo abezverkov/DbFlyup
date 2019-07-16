@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70184A62-E608-44E9-9987-46EFE902ECB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6560F867-7A25-4235-A407-06048C8184BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbflyup", "src\dbflyup-core\dbflyup.csproj", "{911ABCEB-F3EF-4366-B87E-BCDCC85752E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbflyup-sqlserver", "src\dbflyup-sqlserver\dbflyup-sqlserver.csproj", "{8489F029-CF57-4C62-AF94-45F6F23A8505}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbflyup-sqlserver-test", "test\dbflyup-sqlserver-test\dbflyup-sqlserver-test.csproj", "{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B5CBDC4-CAD0-40DE-A13B-AF364185D50A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{911ABCEB-F3EF-4366-B87E-BCDCC85752E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911ABCEB-F3EF-4366-B87E-BCDCC85752E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911ABCEB-F3EF-4366-B87E-BCDCC85752E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911ABCEB-F3EF-4366-B87E-BCDCC85752E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8489F029-CF57-4C62-AF94-45F6F23A8505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8489F029-CF57-4C62-AF94-45F6F23A8505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8489F029-CF57-4C62-AF94-45F6F23A8505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8489F029-CF57-4C62-AF94-45F6F23A8505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{911ABCEB-F3EF-4366-B87E-BCDCC85752E3} = {70184A62-E608-44E9-9987-46EFE902ECB6}
+		{8489F029-CF57-4C62-AF94-45F6F23A8505} = {70184A62-E608-44E9-9987-46EFE902ECB6}
+		{D3FA5BAF-D14D-4CBC-A811-9FCB9062FAED} = {6560F867-7A25-4235-A407-06048C8184BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B84E2745-9B31-492B-93FC-D1F8A2259A52}
+	EndGlobalSection
+EndGlobal

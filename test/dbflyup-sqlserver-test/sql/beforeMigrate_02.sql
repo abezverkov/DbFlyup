@@ -1,0 +1,1 @@
+﻿SELECT USER_NAME(), USER_ID()
