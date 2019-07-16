@@ -10,6 +10,22 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '*.sln'
+    feedsToUse: 'select'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '*.sln'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: 'test/*.csproj'
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
