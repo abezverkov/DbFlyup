@@ -11,20 +11,23 @@ pool:
 
 steps:
 - task: DotNetCoreCLI@2
+  displayName: 'DotnetCore Restore'
   inputs:
     command: 'restore'
     projects: '*.sln'
     feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
+  displayName: 'DotnetCore Build'
   inputs:
     command: 'build'
     projects: '*.sln'
 
 - task: DotNetCoreCLI@2
+  displayName: 'DotnetCore Test'
   inputs:
     command: 'test'
-    projects: 'test/*.csproj'
+    projects: 'test/**/*.csproj'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
