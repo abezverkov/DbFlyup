@@ -30,7 +30,8 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: 'src/**/*.csproj'
-    versioningScheme: 'byBuildNumber'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'BUILD_BUILDNUMBER'
 
 - task: NuGetCommand@2
   displayName: 'nuget push internal'
@@ -39,11 +40,3 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: '39e920f3-39f2-4043-8f36-451a9f32a39f'
-
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
