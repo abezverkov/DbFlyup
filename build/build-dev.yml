@@ -5,7 +5,8 @@
 
 name: 0.0$(Rev:.r)-prerelease   
 
-trigger: dev
+trigger: 
+- dev
 pr: none
 
 pool:
