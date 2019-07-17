@@ -4,6 +4,7 @@
 # https://aka.ms/yaml
 
 name: 0.0$(Rev:.r)-alpha
+pr: none
 
 pool:
   vmImage: 'windows-2019'
