@@ -1,12 +1,9 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-name: 0.0$(Rev:.r)-alpha
+name: 0.0$(Rev:.r)
 
-trigger:
-- master
+trigger: master
+pr: none
 
 pool:
   vmImage: 'windows-2019'
