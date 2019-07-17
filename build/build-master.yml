@@ -2,7 +2,8 @@
 
 name: 0.0$(Rev:.r)
 
-trigger: master
+trigger: 
+- master
 pr: none
 
 pool:
