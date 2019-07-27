@@ -33,9 +33,9 @@ steps:
     versionEnvVar: 'BUILD_BUILDNUMBER'
 
 - task: NuGetCommand@2
-  displayName: 'nuget push internal'
+  displayName: 'nuget push nuget.org'
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '39e920f3-39f2-4043-8f36-451a9f32a39f'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'Nuget.org'
